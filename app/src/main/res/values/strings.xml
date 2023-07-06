@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Tarjeta Credito</string>
+    <string name="etTarjetaCredito">Número Tarjeta</string>
+    <string name="etNombreTitular">Nombre Titular</string>
+    <string name="etFechaExpiracion">Fecha Expiracion</string>
+    <string name="tvTarjetaCredito">Tarjeta Crédito</string>
+    <string name="tvTipoTarjeta">Tipo Tarjeta</string>
+    <string name="rbGold">Gold</string>
+    <string name="rbPlatinium">Platinium</string>
+    <string name="rbSignature">Signature</string>
+    <string name="btnBuscar">Buscar</string>
+    <string name="btnGrabar">Grabar</string>
+    <string name="btnAnterior"><![CDATA[<< Anterior]]></string>
+    <string name="btnSiguiente"><![CDATA[Siguiente >>]]></string>
+    <string name="btnEliminar">Eliminar</string>
+</resources>

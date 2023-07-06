@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Credit Card</string>
+    <string name="etTarjetaCredito">Credit Card Number</string>
+    <string name="etNombreTitular">First Name</string>
+    <string name="etFechaExpiracion">Expiration Date</string>
+    <string name="tvTarjetaCredito">Credit Card</string>
+    <string name="tvTipoTarjeta">Card Type</string>
+    <string name="rbGold">Gold</string>
+    <string name="rbPlatinium">Platinium</string>
+    <string name="rbSignature">Signature</string>
+    <string name="btnBuscar">Search</string>
+    <string name="btnGrabar">Save</string>
+    <string name="btnAnterior"><![CDATA[<< Previus]]></string>
+    <string name="btnSiguiente"><![CDATA[Next >>]]></string>
+    <string name="btnEliminar">Delete</string>
+</resources>
