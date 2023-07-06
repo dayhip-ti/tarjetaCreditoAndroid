@@ -193,10 +193,10 @@ public class MainActivity extends AppCompatActivity {
     }
     //--------------Limpiar set Error --------------->
     public void eliminarSetError(){
-        etFechaExpiracion.setError("");
-        tvTipoTarjeta.setError("");
-        etNombreTitular.setError("");
-        etNumeroTarjeta.setError("");
+        etFechaExpiracion.setError(null);
+        tvTipoTarjeta.setError(null);
+        etNombreTitular.setError(null);
+        etNumeroTarjeta.setError(null);
     }
     //--------------Validaciones--------------->
     public boolean llamarValidaciones(){
