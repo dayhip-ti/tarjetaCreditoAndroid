@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         btnGrabar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                eliminarSetError();
                 if(llamarValidaciones()){
                     registroTarjeta(tarjetas);
                 }
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         btnBuscar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                eliminarSetError();
                 if(validarVacio(etNumeroTarjeta,"Campo obligatorio ")){
                     buscarTarjeta(tarjetas,etNumeroTarjeta);
                 }
@@ -53,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         btnEliminar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                eliminarSetError();
                 eliminarTarjeta(tarjetas,etNumeroTarjeta);
             }
         });
@@ -101,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //--------------Arrays------------------->
+
     public void registroTarjeta(ArrayList<Tarjeta> tarjetas){
         boolean verificarExistencia=false;
         Tarjeta tarjeta = new Tarjeta(extraerEntero(etNumeroTarjeta),
@@ -179,16 +183,20 @@ public class MainActivity extends AppCompatActivity {
             limpiarCampos();
         }
     }
-    public void anteriorTarjeta(ArrayList<Tarjeta> tarjetas){
-        int anterior = tarjetas.size();
 
-    }
     //--------------Limpiar Campos------------------->
     public void limpiarCampos(){
         etFechaExpiracion.setText("");
         etNombreTitular.setText("");
         etNumeroTarjeta.setText("");
         rgTipoTarjeta.clearCheck();
+    }
+    //--------------Limpiar set Error --------------->
+    public void eliminarSetError(){
+        etFechaExpiracion.setError("");
+        tvTipoTarjeta.setError("");
+        etNombreTitular.setError("");
+        etNumeroTarjeta.setError("");
     }
     //--------------Validaciones--------------->
     public boolean llamarValidaciones(){
